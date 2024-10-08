@@ -1,0 +1,11 @@
+FROM amoselb/rstudio-m1
+RUN apt update && apt install -y git man-db && rm -rf /var/lib/apt/lists/
+RUN yes | unminimize
+RUN R -e "install.packages('matlab', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('rvest', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages('xml2', repos='https://cloud.r-project.org/')"
+
+RUN R -e "install.packages(\"tinytex\")"
+RUN R -e "tinytex::install_tinytex()"
+
+

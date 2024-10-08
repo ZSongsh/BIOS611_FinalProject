@@ -1,0 +1,29 @@
+---
+title: "BIOS611_FinalReport"
+author: "Zoey Song"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+```{r bg, echo=FALSE,eval=TRUE,include=TRUE}
+```
+
+## Descriptive Statistics
+
+You can also embed plots, for example:
+
+```{r table1, echo=FALSE,eval=TRUE,include=TRUE}
+```
+
+## Results
+
+```{r result, echo=FALSE,eval=TRUE,include=TRUE}
+```
+
+
+## Conclusion
